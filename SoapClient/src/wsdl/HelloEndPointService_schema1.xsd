@@ -1,0 +1,19 @@
+<xs:schema xmlns:tns="http://sample/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://sample/" version="1.0">
+
+  <xs:element name="helloWorld" type="tns:helloWorld"></xs:element>
+
+  <xs:element name="helloWorldResponse" type="tns:helloWorldResponse"></xs:element>
+
+  <xs:complexType name="helloWorld">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="helloWorldResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
